@@ -1,0 +1,2 @@
+# AZSafariCollectionViewLayout
+##Comming Soon
