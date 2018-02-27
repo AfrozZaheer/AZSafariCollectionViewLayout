@@ -8,16 +8,23 @@
 
 import UIKit
 
-class AZSafariCollectionViewLayout: UICollectionViewLayout {
+public class AZSafariCollectionViewLayout: UICollectionViewLayout {
     
     var attributes  = Array<UICollectionViewLayoutAttributes>()
     var contentSize: CGSize = CGSize(width: 0, height: 0)
-    @IBInspectable var itemGap: CGFloat = 50
-    @IBInspectable var height : CGFloat = 0
-    @IBInspectable var angleOfRotation : CGFloat = -30
+    @IBInspectable public var itemGap: CGFloat = 50
+    @IBInspectable public var itemHeight : CGFloat = 0
+    @IBInspectable public var itemAngleOfRotation : CGFloat = -30
     
+    override public init() {
+        super.init()
+    }
     
-    override func prepare() {
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override public func prepare() {
         super.prepare()
 
         if collectionView?.numberOfSections != 1 {
@@ -28,7 +35,7 @@ class AZSafariCollectionViewLayout: UICollectionViewLayout {
         var top = CGFloat(0.0)
         let left = CGFloat(0.0)
         let width = collectionView?.frame.size.width
-        self.contentSize = CGSize(width: width!, height: height)
+        self.contentSize = CGSize(width: width!, height: itemHeight)
         guard let limit = collectionView?.numberOfItems(inSection: 0) else {
             return
         }
@@ -36,12 +43,12 @@ class AZSafariCollectionViewLayout: UICollectionViewLayout {
         for item in 0..<limit {
             let indexPath = IndexPath(item: item, section: 0)
             let attribute = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-            let frame = CGRect(x: left, y: top, width: width!, height: height)
+            let frame = CGRect(x: left, y: top, width: width!, height: itemHeight)
             
             attribute.frame = frame
             attribute.zIndex = item
             
-            //var angleOfRotation = CGFloat(-30.0)
+            var angleOfRotation = itemAngleOfRotation
             
             var frameOffset = Float((self.collectionView?.contentOffset.y)! - frame.origin.y) - floorf(Float(self.collectionView!.frame.size.height/10.0))
             
@@ -78,11 +85,11 @@ class AZSafariCollectionViewLayout: UICollectionViewLayout {
         }
     }
     
-    override var collectionViewContentSize: CGSize {
+    override public var collectionViewContentSize: CGSize {
         return self.contentSize
     }
 
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
         var visibleLayoutAttributes = [UICollectionViewLayoutAttributes]()
         
@@ -94,16 +101,16 @@ class AZSafariCollectionViewLayout: UICollectionViewLayout {
         return visibleLayoutAttributes
     }
     
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
        
         return self.attributes[indexPath.item]
     }
     
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+    override public func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
     
-    override func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return self.attributes[itemIndexPath.item]
     }
     

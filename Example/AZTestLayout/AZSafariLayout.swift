@@ -41,7 +41,7 @@ class AZSafariCollectionViewLayout: UICollectionViewLayout {
             attribute.frame = frame
             attribute.zIndex = item
             
-            //var angleOfRotation = CGFloat(-30.0)
+            angleOfRotation = CGFloat(-30.0)
             
             var frameOffset = Float((self.collectionView?.contentOffset.y)! - frame.origin.y) - floorf(Float(self.collectionView!.frame.size.height/10.0))
             
