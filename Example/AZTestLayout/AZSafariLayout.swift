@@ -1,9 +1,9 @@
 //
-//  StickyCollectionViewFlowLayout.swift
-//  StickyCollectionView
+//  AZSafariLayout.swift
+//  AZSafariLayout
 //
-//  Created by Bogdan Matveev on 02/02/16.
-//  Copyright © 2016 Bogdan Matveev. All rights reserved.
+//  Created by Afroz Zaheer on 22/02/2018.
+//  Copyright © 2018 Afroz Zaheer. All rights reserved.
 //
 
 import UIKit

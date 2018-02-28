@@ -9,8 +9,8 @@
 
 
 <p align="center">
-<a href="https://i.imgur.com/3e49iHG.gif">
-<img src="https://i.imgur.com/3e49iHG.gif" height="480">
+<a href="https://i.imgur.com/tgCdFnK.gif">
+<img src="https://i.imgur.com/tgCdFnK.gif" height="480">
 </a>
 </p>
 

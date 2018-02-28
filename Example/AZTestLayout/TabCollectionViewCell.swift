@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import WebKit
 
 class TabCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var bgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()

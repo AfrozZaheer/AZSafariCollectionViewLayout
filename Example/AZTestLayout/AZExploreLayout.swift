@@ -2,7 +2,7 @@
 //  AZExploreLayout.swift
 //  AZTestLayout
 //
-//  Created by Afroz Zaheer on 23/02/2018.
+//  Created by Afroz Zaheer on 22/02/2018.
 //  Copyright © 2018 Afroz Zaheer. All rights reserved.
 //
 
