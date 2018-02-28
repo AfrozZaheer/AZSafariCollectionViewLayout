@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8545A9A2046B92D004F04B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B8545A992046B92D004F04B7 /* README.md */; };
 		B8764899203E9BBD00B1FA40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8764898203E9BBD00B1FA40 /* AppDelegate.swift */; };
 		B876489B203E9BBD00B1FA40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B876489A203E9BBD00B1FA40 /* ViewController.swift */; };
 		B876489E203E9BBD00B1FA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B876489C203E9BBD00B1FA40 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8545A992046B92D004F04B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		B8764895203E9BBD00B1FA40 /* AZTestLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZTestLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8764898203E9BBD00B1FA40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B876489A203E9BBD00B1FA40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		B8764897203E9BBD00B1FA40 /* AZTestLayout */ = {
 			isa = PBXGroup;
 			children = (
+				B8545A992046B92D004F04B7 /* README.md */,
 				B8764898203E9BBD00B1FA40 /* AppDelegate.swift */,
 				B876489A203E9BBD00B1FA40 /* ViewController.swift */,
 				B876489C203E9BBD00B1FA40 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				B87648AF203EA27100B1FA40 /* TabCollectionViewCell.xib in Resources */,
 				B87648A3203E9BBD00B1FA40 /* LaunchScreen.storyboard in Resources */,
+				B8545A9A2046B92D004F04B7 /* README.md in Resources */,
 				B87648A0203E9BBD00B1FA40 /* Assets.xcassets in Resources */,
 				B876489E203E9BBD00B1FA40 /* Main.storyboard in Resources */,
 			);
