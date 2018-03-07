@@ -1,6 +1,6 @@
 # AZSafariCollectionViewLayout
 
-<!--[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)-->
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Swift version](https://img.shields.io/badge/swift%20-4.0-orange.svg)](https://img.shields.io/badge/swift%20-4.0-orange.svg)
 [![Support Dependecy Manager](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
 [![Version](https://img.shields.io/cocoapods/v/AZSafariCollectionViewLayout.svg?style=flat)](https://cocoapods.org/pods/AZSafariCollectionViewLayout)
